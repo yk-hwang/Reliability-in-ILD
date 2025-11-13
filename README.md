@@ -1,2 +1,59 @@
-# Reliability-in-ILD
-datagen_combine_analysis.R: A single R script to manipulate within-person reliability conditions for a DSEM simulation. Uses MplusAutomation to generate ILD, fit MEAR(1) models, and verify within-person reliability distributions. 
+Reliability-in-ILD
+
+This repository contains the R code for a simulation study on within-person reliability in Dynamic Structural Equation Modeling (DSEM).
+
+The primary script (datagen_combine_analysis.R) was developed to manipulate and verify the simulation conditions related to within-person reliability levels.
+
+1. Context & Citation
+
+This code was used for the simulation study in the following manuscript:
+
+Manuscript in preparation
+
+Hwang, Y. K., Lee, Y. S. & Suk, H. W. (2025). Examining the impact of within-person reliability in dynamic structural equation modeling.
+
+2. Core Script
+
+All functionalities are contained within the single R script: datagen_combine_analysis.R.
+
+This script manages the entire workflow, from data generation to model fitting and parameter verification.
+
+3. Requirements
+
+R (tested on version 4.5.0)
+
+Mplus (tested on version 8.7)
+
+R Packages:
+
+MplusAutomation: To interface between R and Mplus.
+
+dplyr: For data manipulation.
+
+(other packages as needed, e.g., stringr, purrr, readr, openxlsx)
+
+4. Workflow
+
+The datagen_combine_analysis.R script executes the following sequential steps:
+
+Data Generation: Calls Mplus to generate Intensive Longitudinal Data (ILD) with varying, pre-defined levels of within-person reliability.
+
+Replication Setup: Collects and organizes the generated data to create 100 replication datasets.
+
+Model Fitting: Uses MplusAutomation to automatically run a MEAR(1) model (Multilevel Error Autoregressive Model) on each of the 100 replication datasets in Mplus.
+
+Parameter Extraction: Reads the Mplus output files (.out) back into R to extract the estimated person-specific parameters for each replication. This includes:
+
+Innovation variance
+
+Measurement error variance
+
+Autoregressive coefficient
+
+Condition Verification: Calculates the mean and variance of the estimated within-person reliability parameters across replications. This final step verifies that the generated data successfully reflects the researcher-intended distribution of within-person reliability.
+
+5. Author
+
+Y. K. Hwang
+
+Contact: hwangyk96@gmail.com
