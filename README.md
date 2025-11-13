@@ -46,4 +46,14 @@ The datagen_combine_analysis.R script executes the following sequential steps:
 
 Innovation variance
 
-Measurement error
+Measurement error variance
+
+Autoregressive coefficient
+
+5. Condition Verification: Calculates the mean and variance of the estimated within-person reliability parameters across replications. This final step verifies that the generated data successfully reflects the researcher-intended distribution of within-person reliability.
+
+## 5. Author
+
+Y. K. Hwang
+
+Contact: hwangyk96@gmail.com
