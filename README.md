@@ -27,7 +27,7 @@ R Packages:
 
 MplusAutomation: To interface between R and Mplus.
 
-(other packages as needed, e.g., dplyr, stringr, purrr, readr, openxlsx)
+(other packages, e.g., dplyr, stringr, purrr, readr, openxlsx)
 
 ## 4. Workflow
 
