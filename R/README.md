@@ -1,6 +1,6 @@
-# Reliability-in-ILD
+# R
 
-This project contains materials for a simulation study on within-person reliability in Dynamic Structural Equation Modeling (DSEM). A single R script (datagen_combine_analysis.R) was developed to manipulate and verify the simulation conditions related to within-person reliability levels.
+A single R script (datagen_combine_analysis.R) was developed to manipulate and verify the simulation conditions related to within-person reliability levels.
 
 ## 1. Context & Citation
 
